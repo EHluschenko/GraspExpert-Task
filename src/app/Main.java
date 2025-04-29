@@ -8,6 +8,10 @@ public class Main {
         Address address = new Address("Voloshkova", "5a");
         user.setAddress(address);
         user.printAddress();
+        System.out.println("Address changed");
+        Address newAddress = new Address("Voloshkova123", "3a");
+        user.setAddress(newAddress);
+        user.printAddress();
         verification.verificationOwnershipAddress(user);
     }
 }
